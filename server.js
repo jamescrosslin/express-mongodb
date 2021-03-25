@@ -6,7 +6,7 @@ const app = express();
 const userData = {
   name: "James",
   age: 32,
-  favoriteFoods: ["rotisserie chicken", "edibles"],
+  favoriteFood: "rotisserie chicken",
 };
 
 app.get("/", async (req, res) => {
