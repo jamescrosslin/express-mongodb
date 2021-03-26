@@ -6,6 +6,7 @@ async function connectToMongo() {
   const username = "James";
   const database = "test";
   const cluster = "cluster0.y0oqp.mongodb.net";
+
   const uri = `mongodb+srv://${username}:${mongoKey}@${cluster}/${database}?retryWrites=true&w=majority`;
 
   const client = await new MongoClient(uri, {
